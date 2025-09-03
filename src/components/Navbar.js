@@ -7,7 +7,7 @@ function Navbar() {
     if (!query) return alert("Enter a location first!");
 
     const apiKey = process.env.REACT_APP_OPENCAGE_KEY;
-    console.log("API Key:", apiKey); // 👀 Debug: should not be undefined
+    console.log("API Key:", apiKey); 
 
     try {
       const response = await fetch(
@@ -19,9 +19,9 @@ function Navbar() {
       console.log("OpenCage response:", data);
 
       if (data.results && data.results.length > 0) {
-  const place = data.results[0]; // first match
+  const place = data.results[0]; 
   const { lat, lng } = place.geometry;
-  const formatted = place.formatted; // nice readable name
+  const formatted = place.formatted;
 
   alert(`Found: ${formatted} → lat: ${lat}, lng: ${lng}`);
 } else {
