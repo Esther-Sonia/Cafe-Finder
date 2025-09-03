@@ -1,0 +1,17 @@
+import React from "react";
+
+function Sidebar ({
+    cafes,
+    searchType,
+    setSearchType,
+    minRating,
+    setMinRating,
+    setSelectedCafe,
+}) {
+    return (
+        <div className="w-1/3 md:w-1/4 bg-gray-100 p-4 overflow-y-auto shadow-lg">
+            <h2 className
+
+        </div>
+    )
+}
